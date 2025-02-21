@@ -10,6 +10,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
 import { WorkComponent } from './pages/work/work.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HomeCarouselComponent } from './components/home/home-carousel/home-carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     SkillsComponent,
     ExperienceComponent,
     WorkComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HomeCarouselComponent
   ],
   imports: [
     BrowserModule,

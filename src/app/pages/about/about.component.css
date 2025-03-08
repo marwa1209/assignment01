@@ -1,6 +1,47 @@
-    #about {
-        padding-left: 5% !important;
-        padding-right: 5% !important;
-        padding-top: 15% !important;
-    }
 
+.service-box {
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 56px -8px #0000002b;
+  padding: 24px;
+}
+.color-1 {
+  font-size: 30px;
+  color: #2c98f0;
+}
+
+.color-2 {
+  font-size: 30px;
+  color: #ec5453;
+}
+
+.color-3 {
+  font-size: 30px;
+  color: #f9bf3f;
+}
+
+.color-4 {
+  font-size: 30px;
+  color: #a84cb8;
+}
+
+.service-box.color-1 {
+  border-bottom: 2px solid #2c98f0;
+}
+.service-box.color-2 {
+  border-bottom: 2px solid #ec5453;
+}
+.service-box.color-3 {
+  border-bottom: 2px solid #f9bf3f;
+}
+.service-box.color-4 {
+  border-bottom: 2px solid #a84cb8;
+}
+.service-box h3 {
+  margin-top: 20px;
+  font-family: Quicksand, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}

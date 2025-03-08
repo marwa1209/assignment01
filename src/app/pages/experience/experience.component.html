@@ -1,1 +1,19 @@
-<p>experience works!</p>
+<div class="page-container  container py-5  mt-3 d-lg-flex d-block flex-column justify-content-center ">
+  <p class="page-title">EXPERIENCE</p>
+  <h2 class="page-heading">WORK EXPERIENCE</h2>
+<ul class="timeline">
+  <li *ngFor="let item of timelineItems">
+    <div class="timeline-badge" [ngClass]="item.badgeClass">
+      <i [class]="item.icon"></i>
+    </div>
+    <div class="timeline-panel">
+      <h2 class="d-flex align-items-center gap-1">
+        <span >{{ item.title }}</span>
+        <span class="opacity-50 fs-6">{{ item.duration }}</span>
+      </h2>
+      <p class="mb-1">{{ item.description }}</p>
+    </div>
+  </li>
+
+</ul>
+</div>

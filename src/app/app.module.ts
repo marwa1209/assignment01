@@ -12,6 +12,7 @@ import { WorkComponent } from './pages/work/work.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HomeCarouselComponent } from './components/home/home-carousel/home-carousel.component';
 import { ToggleIconComponent } from './shared/icons/toggle/toggle-nav-icon.component';
+import { ProgressBarComponent } from './shared/components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ToggleIconComponent } from './shared/icons/toggle/toggle-nav-icon.compo
     WorkComponent,
     NotFoundComponent,
     HomeCarouselComponent,
-    ToggleIconComponent
+    ToggleIconComponent,
+    ProgressBarComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

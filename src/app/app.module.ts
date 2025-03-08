@@ -11,6 +11,7 @@ import { ExperienceComponent } from './pages/experience/experience.component';
 import { WorkComponent } from './pages/work/work.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HomeCarouselComponent } from './components/home/home-carousel/home-carousel.component';
+import { ToggleIconComponent } from './shared/icons/toggle/toggle-nav-icon.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,11 @@ import { HomeCarouselComponent } from './components/home/home-carousel/home-caro
     ExperienceComponent,
     WorkComponent,
     NotFoundComponent,
-    HomeCarouselComponent
+    HomeCarouselComponent,
+    ToggleIconComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

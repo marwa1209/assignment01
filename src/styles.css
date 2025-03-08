@@ -1,10 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Quicksand:wght@300;400;500;700&display=swap');
 
-body, p, span, div, a {
-  font-family: 'Quicksand', sans-serif !important;
-}
 
+body {
+    font-family: Quicksand, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #000000b3;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }
+.page-container {
+  padding-left: 15% !important;
+  padding-right: 15% !important;
+}
+
+.page-title {
+  margin-bottom: 15px;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-family: Quicksand, Arial, sans-serif;
+}
+.page-heading {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.8;
+  position: relative;
+  margin: 0 0 30px;
+  color: #000;
+  font-family: Playfair Display, Georgia, serif;
+}
+.page-text {
+  margin-bottom: 1.5em;
+  font-family: Quicksand, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #000000b3;
+}
+.bg-custom-1 { background-color: #2c98f0 !important; }
+.bg-custom-2 { background-color: #ec5453 !important; }
+.bg-custom-3 { background-color: #f9bf3f !important; }
+.bg-custom-4 { background-color: #a84cb8 !important; }
+.bg-custom-5 { background-color: #2fa499 !important; }
+.bg-custom-6 { background-color: #4054b2!important }
+.text-custom-1 { color: #2c98f0 !important; }
+.text-custom-2 { color: #ec5453 !important; }
+.text-custom-3 { color: #f9bf3f !important; }
+.text-custom-4 { color: #a84cb8 !important; }
+.text-custom-5 { color: #2fa499 !important; }
+.text-custom-6 { color: #4054b2 !important; }

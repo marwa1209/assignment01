@@ -1,15 +1,15 @@
-<nav class="sidebar vh-100 position-fixed  top-0 start-0 d-flex justify-content-center py-5 ">
-
-     <div class="d-flex flex-column align-items-center">
+<nav class="sidebar vh-100 position-fixed d-none d-md-block top-0 start-0 d-flex justify-content-center py-5 "
+  [ngClass]="{'w-50 d-md-block d-block': isSideNavOpen, 'd-none': !isSideNavOpen && isSmallScreen }" #sideNav>
+       <div class="d-flex flex-column align-items-center">
         <!--Profile Info-->
     <!-- Profile Image -->
   <img src="assets/images/profile.webp" class="profile-img img-fluid rounded-circle  " alt="Profile Image">
   <!-- Profile Name & desc -->
-   <h2 class="profile-name ">Jackson Ford</h2>
-   <span class="jop-desc"><span class="cursor-pointer ">UI/UX/Designer</span> in Philippines</span>
-  <ul class="nav flex-column mt-3">
-    <li class="nav-item px-0">
-      <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+   <h2 class="profile-name text-center">Jackson Ford</h2>
+   <span class="jop-desc text-center"><span class="cursor-pointer ">UI/UX/Designer</span> in Philippines</span>
+  <ul class="nav flex-column justify-content-center align-items-center  mt-3">
+    <li class="nav-item w-auto">
+      <a class="nav-link " routerLink="/home" routerLinkActive="active">Home</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
@@ -26,3 +26,9 @@
   </ul>
   </div>
 </nav>
+
+<div *ngIf="isSideNavOpen && isSmallScreen" class="overlay" (click)="closeSideNav()"></div>
+
+  <button class=" border py-2 px-3 bg-white m-1 rounded-2 w-auto  d-md-none " (click)="toggleSideNav()">
+    <app-toggle-nav-icon />
+  </button>

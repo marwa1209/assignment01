@@ -1,0 +1,39 @@
+.progress-title {
+  font-size: 16px;
+  font-family: Quicksand, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  margin: 25px 0 0;
+}
+
+.progress-bar {
+  height: 6px;
+  box-shadow: none;
+  background: #f2f3f7;
+  overflow: visible;
+}
+.progress-fill {
+  height: 100%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  transition: width 0.5s ease-in-out;
+  position: relative;
+}
+.progress-percentage {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    position: absolute;
+    top: -200%;
+    right: 0;
+}
+
+.progress-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}

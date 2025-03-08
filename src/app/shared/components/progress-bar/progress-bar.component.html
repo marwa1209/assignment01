@@ -1,0 +1,13 @@
+<div class="w-100">
+  <div class="d-flex justify-content-between align-items-center mb-1">
+    <div class="progress-title">{{ title }}</div>
+  </div>
+  <div class="progress-bar">
+    <div class="progress-fill position-relative" [ngClass]="color" [style.width.%]="percentage">
+      <div class="progress-circle " [ngClass]="color">
+                <div class="progress-percentage" [ngClass]="textColor">{{ percentage }}%</div>
+   </div>
+
+    </div>
+  </div>
+</div>
